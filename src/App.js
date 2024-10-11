@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ButtonComponent from './Button';
 
 function App() {
+  const yellowButton=()=>{
+    alert("yellow button clicked");
+  }
+  const redButton=()=>{
+    alert("red button clicked");
+  }
+  const greenButton=()=>{
+    alert("green button clicked");
+  }
+  let isUserAuthenticated=true;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>First React code</h1>
+    <p>OM! SAIRAM</p>
+    {isUserAuthenticated ?<h1>login</h1>:<h1>please signup to login</h1>}
+    <ButtonComponent 
+    buttonText="Try this one"
+    backgroundColor="yellow"
+    click={yellowButton}
+    />
+     <ButtonComponent 
+    buttonText="Try this one"
+    backgroundColor="green"
+    click={greenButton}
+    />
+     <ButtonComponent 
+    buttonText="Try this one"
+    backgroundColor="red"
+    click={redButton}
+    />
     </div>
+    
   );
 }
 

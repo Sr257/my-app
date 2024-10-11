@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+node_modules
+logo192.png
+logo512.png
+logo.svg
+reportWebVitals.jssetupTests.js
+node_modules
